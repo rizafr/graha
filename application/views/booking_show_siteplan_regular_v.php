@@ -5,19 +5,23 @@
 #each_siteplan
 {
 	margin:20px; 
-	border:1px #666 solid; 
+	border:1px #607D8B solid; 
 	width: 435px; 
 	height:110px; 
-	padding:10px; 
-	background-image: url('<?php echo base_url(); ?>files/images/transparent-black.png'); 
+	padding:10px; 	
+	background: #607D8B !important; 
 	float:left;
 }
 
 #each_siteplan:hover
 {
-	-webkit-box-shadow: 0px 0px 10px rgba(78, 101, 153, 1);
-	-moz-box-shadow: 0px 0px 10px rgba(78, 101, 153, 1);
-	box-shadow: 0px 0px 10px rgba(78, 101, 153, 1);
+
+	-webkit-box-shadow: 3px 0px 15px rgba(78, 101, 153, 1);
+	-moz-box-shadow: 3px 0px 15px rgba(78, 101, 153, 1);
+	box-shadow: 3px 0px 15px rgba(78, 101, 153, 1);
+	-webkit-transition: all .3s linear;
+  -o-transition: all .3s linear;
+  transition: all .3s linear;
 } 
 
 </style>

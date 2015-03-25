@@ -112,31 +112,20 @@ $(document).ready(function()
 });
 </script>
 <style type="text/css">
-.logo-bg {
-	height: 38px;
-	position:absolute;
-	z-index:1000;
-	margin:1px 2px 1px 2px;
-	padding:6px 8px 1px 8px;
-	--background-image:url('<?php echo base_url(); ?>files/images/transparent-black.png');
-	background: #F0F0F0;
-	border-radius:3px 3px 3px 3px;
-	border: 1px solid rgb(153, 153, 153);
-}
+
 </style>
 
-<div class="header" style="height:50px; ">
-	<div class="logo-bg">
-		<img src="<?php echo base_url(); ?>files/images/logo_PembangunanJayaAncol_login.png" height="35px">
-	</div>
-</div>
+
 
 <?php
 if($this->access_lib->_if("adm"))
 {
 ?>
 <div id="top_panel">
-	<div class="list_menu" style="color:#F00;"><a href="<?php echo base_url(); ?>login/logout" style="color:#F00;">Logout</a></div>
+	<div class="logo-bg">
+		PT. Pembangunan Jaya Ancol Tbk
+	</div>
+	<div class="list_menu" ><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>trash_data">Trash Data</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/logs">User Logs</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
@@ -191,7 +180,7 @@ elseif($this->access_lib->_if("mgr"))
 {
 ?>
 <div id="top_panel">
-	<div class="list_menu" style="color:#F00;"><a href="<?php echo base_url(); ?>login/logout" style="color:#F00;">Logout</a></div>
+	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>trash_data">Trash Data</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user">User</a></div>
@@ -244,7 +233,7 @@ elseif($this->access_lib->_if("stk"))
 {
 ?>
 <div id="top_panel">
-	<div class="list_menu" style="color:#F00;"><a href="<?php echo base_url(); ?>login/logout" style="color:#F00;">Logout</a></div>
+	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
 	<div class="list_menu" id="menu_report">
 		<a class="account">Report</a>
@@ -278,7 +267,7 @@ elseif($this->access_lib->_if("ksr"))
 {
 ?>
 <div id="top_panel">
-	<div class="list_menu" style="color:#F00;"><a href="<?php echo base_url(); ?>login/logout" style="color:#F00;">Logout</a></div>
+	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>trash_data">Trash Data</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
 	<div class="list_menu" id="menu_report">
@@ -315,7 +304,7 @@ elseif($this->access_lib->_if("sal"))
 {
 ?>
 <div id="top_panel">
-	<div class="list_menu" style="color:#F00;"><a href="<?php echo base_url(); ?>login/logout" style="color:#F00;">Logout</a></div>
+	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
 	<div class="list_menu" id="menu_report">
 		<a class="account">Report</a>
