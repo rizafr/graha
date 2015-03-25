@@ -45,7 +45,14 @@
 }
 
 body {
-	background: url(../images/bgperumahan.jpg)no-repeat center center fixed;
+	background: 
+		/* top, transparent red, faked with gradient */ 
+			linear-gradient(
+		  rgba(3, 0, 0, 0.45), 
+		 rgba(3, 0, 0, 0.45)
+		),
+		/* bottom, image */
+		url(../images/bgperumahan.jpg);
 	 -webkit-background-size: cover;
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
