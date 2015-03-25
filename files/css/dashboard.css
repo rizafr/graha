@@ -7,7 +7,11 @@
 }
 
 body {
-	background-image: url(../images/bg-image.jpg);
+	background-image: url(../images/bgperumahan.jpg);
+	-webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	  background-size: cover;
 	background-color: #CCCCCC;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -325,7 +329,8 @@ select:focus{
 #top_panel2{
 	width:100%;
 	height:20px;
-	background-image:url(../images/-.jpg);
+	/*background-image:url(../images/-.jpg);*/
+	background: #03a9f4;
 	-moz-box-shadow: 0 0 2px 2px #000;
 	-webkit-box-shadow: 0 0 2px 000;
 	box-shadow: 0 0 2px 2px #000;
@@ -348,13 +353,16 @@ select:focus{
 
 #top_panel{
 	width:100%;
-	height:14px;
-	background-image:url(../images/bg-panel.jpg);
-	-moz-box-shadow: 0 0 2px 2px #000;
+	height:20px;
+	margin-top:30px;
+	padding: 10px 0;
+	/*background-image:url(../images/bg-panel.jpg);*/
+	background: #03a9f4;
+	/*-moz-box-shadow: 0 0 2px 2px #000;
 	-webkit-box-shadow: 0 0 2px 000;
 	box-shadow: 0 0 2px 2px #000;
 	padding: 3px 0 5px 0;
-	border-top: 1px #999999 solid;
+	border-top: 1px #999999 solid;*/
 	z-index:10000;
 	border-bottom: 1px #999999 solid;
 }
@@ -404,12 +412,11 @@ select:focus{
 }
 
 .frame_tabel{
-	border:1px #666 solid;
+	
 	padding:1px;
 	float:left;
 	background-color:#FFF;
-	border-radius:5px;
-	box-shadow: 0 0 4px 1px #000;
+	border-radius:1px;
 }
 
 .header_tabel_cust{
@@ -434,7 +441,7 @@ select:focus{
 	color:#FFF;
 	text-align:center;
 	padding: 5px 0 5px 0;
-	background-color:#0066FF;
+	background-color:#0288d1;
 }
 
 .margin_center{

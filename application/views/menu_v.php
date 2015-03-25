@@ -127,7 +127,7 @@ $(document).ready(function()
 
 <div class="header" style="height:50px; ">
 	<div class="logo-bg">
-		<img src="<?php echo base_url(); ?>files/images/logo_graha.png" height="35px">
+		<img src="<?php echo base_url(); ?>files/images/logo_PembangunanJayaAncol_login.png" height="35px">
 	</div>
 </div>
 

@@ -44,7 +44,7 @@ $(document).ready(function() {
     <form name="login-form" class="login-form" action="<?php echo base_url(); ?>login/process" method="post">
     
         <div class="header" style="height:78px;">
-            <div style="position:absolute; margin:5px 0 0 -9px"><img src="<?php echo base_url(); ?>files/images/logo_graha_login.png"></div>
+            <div style="position:absolute; margin:5px 0 0 -9px"><img src="<?php echo base_url(); ?>files/images/logo_PembangunanJayaAncol_login.png"></div>
         </div>
         
         <div class="content">
@@ -56,7 +56,7 @@ $(document).ready(function() {
         
         <div class="footer">
             <input type="submit" name="submit" value="Login" class="button" />
-            <div class="footer_login">Copyright &copy; 2013 - Graha Raya</div>
+            <div class="footer_login">Copyright &copy; 2015 - PT Pembangunan Jaya Ancol</div>
         </div>
     
     </form>
