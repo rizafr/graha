@@ -1,0 +1,54 @@
+*{margin:0; padding:0;}
+
+a{outline:none;}
+
+#tabContaier{
+	background:#DDD;
+	border:1px solid #fff;
+	padding:1px;
+	position:relative;
+	width:99.5%;
+	font-size:10px;
+}
+#tabContaier ul{
+	overflow:hidden;
+	border-right:1px solid #fff;
+	height:25px;
+	position:absolute;
+	z-index:100;
+}
+#tabContaier li{
+	float:left;
+	list-style:none;
+}
+#tabContaier li a{
+	--background-image:url(../images/bg_header_tabel.png);
+	background-color:#0066FF;
+	border:1px solid #fcfcfc;
+	border-right:0;
+	color:#FFF;
+	cursor:pointer;
+	display:block;
+	height:25px;
+	line-height:25px;
+	padding:0 5px;
+	text-decoration:none;
+}
+#tabContaier li a:hover{
+	background:#DDD;
+}
+#tabContaier li a.active{
+	background:#fbfbfb;
+	border:1px solid #fff;
+	border-right:0;
+	color:#333;
+}
+.tabDetails{
+	background:#fbfbfb;
+	border:1px solid #fff;
+	margin:25px 0 0;
+}
+.tabContents{
+	padding:5px
+}
+
