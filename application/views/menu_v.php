@@ -126,7 +126,7 @@ if($this->access_lib->_if("adm"))
 {
 ?>
 <div id="top_panel">
-	<? echo $nama_perusahaan; ?>
+	<?php echo $nama_perusahaan; ?>
 	<div class="list_menu" ><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>trash_data">Trash Data</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/logs">User Logs</a></div>
@@ -182,7 +182,7 @@ elseif($this->access_lib->_if("mgr"))
 {
 ?>
 <div id="top_panel">
-	<? echo $nama_perusahaan; ?>
+	<?php echo $nama_perusahaan; ?>
 	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>trash_data">Trash Data</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
@@ -236,7 +236,7 @@ elseif($this->access_lib->_if("stk"))
 {
 ?>
 <div id="top_panel">
-	<? echo $nama_perusahaan; ?>
+	<?php echo $nama_perusahaan; ?>
 	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
 	<div class="list_menu" id="menu_report">
@@ -271,7 +271,7 @@ elseif($this->access_lib->_if("ksr"))
 {
 ?>
 <div id="top_panel">
-	<? echo $nama_perusahaan; ?>
+	<?php echo $nama_perusahaan; ?>
 	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>trash_data">Trash Data</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
@@ -309,7 +309,7 @@ elseif($this->access_lib->_if("sal"))
 {
 ?>
 <div id="top_panel">
-	<? echo $nama_perusahaan; ?>
+	<?php echo $nama_perusahaan; ?>
 	<div class="list_menu" style="color:#03A9F4;"><a href="<?php echo base_url(); ?>login/logout" style="color:#03A9F4;">Logout</a></div>
 	<div class="list_menu"><a href="<?php echo base_url(); ?>user/profile">Profile</a></div>
 	<div class="list_menu" id="menu_report">
