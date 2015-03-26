@@ -13,18 +13,18 @@ $(document).ready(function(){
 		
 		<table width="100%" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC">
 			<tr bgcolor="#0066FF">
-				<td rowspan="2"><div class="header_tabel"> Kategori </div></td>
-				<td rowspan="2"><div class="header_tabel"> Cluster </div></td>
-				<td rowspan="2"><div class="header_tabel"> Unit </div></td>
-				<td rowspan="2"><div class="header_tabel"> Type </div></td>
-				<td colspan="2" width="170px"><div class="header_tabel"> Diskon </div></td>
-				<td rowspan="2"><div class="header_tabel"> Status Transaksi </div></td>
-				<td rowspan="2"><div class="header_tabel">&nbsp;</div></td>
+				<td rowspan="2" class="header_tabel"> Kategori  </td>
+				<td rowspan="2"  class="header_tabel"> Cluster  </td>
+				<td rowspan="2"  class="header_tabel"> Unit  </td>
+				<td rowspan="2"  class="header_tabel"> Type  </td>
+				<td colspan="2" width="170px" class="header_tabel"> Diskon  </td>
+				<td rowspan="2" class="header_tabel"> Status Transaksi  </td>
+				<td rowspan="2"  class="header_tabel">&nbsp; </td>
 			</tr>
 			
 			<tr bgcolor="#0066FF">
-				<td width="85px"><div class="header_tabel"> Tanah </div></td>
-				<td width="85px"><div class="header_tabel"> Bangunan </div></td>
+				<td width="85px"  class="header_tabel"> Tanah  </td>
+				<td width="85px" class="header_tabel"> Bangunan  </td>
 			</tr>
 			
 			<?php

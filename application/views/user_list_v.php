@@ -28,18 +28,18 @@
 	<div class="frame_tabel radius transparent">
 		<table width="1000px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC">
 			<tr bgcolor="#0288d1">
-				<td rowspan="2"><div class="header_tabel"> Nama Lengkap </div></td>
-				<td rowspan="2"><div class="header_tabel"> HP </div></td>
-				<td rowspan="2"><div class="header_tabel"> Username </div></td>
-				<td width="90px" rowspan="2"><div class="header_tabel"> Level </div></td>
-				<td colspan="2"><div class="header_tabel"> Sales </div></td>
-				<td width="130px" rowspan="2"><div class="header_tabel"> Status Transaksi </div></td>
-				<td width="50px" rowspan="2" colspan="3"><div class="header_tabel">&nbsp;</div></td>
+				<td class="header_tabel" rowspan="2">Nama Lengkap </td>
+				<td class="header_tabel" rowspan="2"> HP </td>
+				<td class="header_tabel" rowspan="2">Username </td>
+				<td class="header_tabel" width="90px" rowspan="2">Level</td>
+				<td class="header_tabel" colspan="2">Sales</td>
+				<td class="header_tabel" width="130px" rowspan="2">Status Transaksi </td>
+				<td class="header_tabel" width="50px" rowspan="2" colspan="3">&nbsp;</td>
 			</tr>
 			
 			<tr bgcolor="#0066FF">
-				<td><div class="header_tabel"> Team </div></td>
-				<td><div class="header_tabel"> Manager </div></td>
+				<td class="header_tabel"> Team </td>
+				<td class="header_tabel"> Manager </td>
 			</tr>
 			
 			<?php

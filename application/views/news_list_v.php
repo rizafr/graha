@@ -6,13 +6,14 @@
 		<a href="<?php echo base_url(); ?>home/add"><input type="button" value="Tambah Data &#43;"></a>
 	</div>
 	<div class="frame_tabel radius transparent">
-		<table width="1000px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC">
-			<tr bgcolor="#FFFFFF">
-				<td width="800px"><div class="header_tabel"> Title </div></td>
-				<td width="100px"><div class="header_tabel"> Status </div></td>
-				<td colspan="3"><div class="header_tabel">&nbsp;</div></td>
+		<table width="1000px">
+			<thead>
+				<th class="header_tabel_cust"> Title </th>
+				<th class="header_tabel_cust" width="100px"> Status </th>
+				<th  class="header_tabel_cust" colspan="3">Action</th>
 			</tr>
-			
+			</thead>
+			<tbody>
 			<?php
 			foreach($news as $data_news)
 			{
@@ -64,7 +65,7 @@
 				<?php
 			}
 			?>
-			
+			</tbody>
 		</table>
 	</div>
 	

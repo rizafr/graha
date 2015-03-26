@@ -45,7 +45,7 @@
 	<div class="frame_tabel radius transparent" style="margin-bottom: 3px;">
 		<table cellspacing="1px" cellpadding="1px">
 			<tr bgcolor="#FFFFFF">
-				<td width="150px" bgcolor="#0066FF"><div class="header_tabel_cari" style="height: 100%;">Filter</div></td>
+				<td width="150px" bgcolor="#0066FF" class="header_tabel_cari" style="height: 100%;">Filter </td>
 				<td>
 					<div class="isi_tabel">
 						<select name="filter_kategori" id="filter_kategori">
@@ -156,7 +156,7 @@
 			</tr>
 			
 			<tr bgcolor="#FFFFFF">
-				<td bgcolor="#0066FF"><div class="header_tabel_cari" style="height: 100%;">Urutkan</div></td>
+				<td bgcolor="#0066FF"  class="header_tabel_cari" style="height: 100%;">Urutkan </td>
 				<td>
 					<div class="isi_tabel">
 						<span id="frame_order_by">
@@ -182,7 +182,7 @@
 			</tr>
 			
 			<tr bgcolor="#FFFFFF">
-				<td bgcolor="#0066FF"><div class="header_tabel_cari" style="height: 100%;">Pencarian</div></td><td>
+				<td bgcolor="#0066FF" class="header_tabel_cari" style="height: 100%;">Pencarian </td><td>
 					<div class="isi_tabel">
 						<input type="text" value="<?php echo $filter_kode_cluster;?>" size="8" name="filter_kode_cluster" id="filter_kode_cluster" placeholder="Kd. Cluster" style="text-align:center;"> <strong>/</strong>
 						<input type="text" value="<?php echo $filter_blok;?>" size="2" name="filter_blok" id="filter_blok" placeholder="Blok" style="text-align:center;"> <strong>-</strong>
@@ -192,7 +192,7 @@
 			</tr>
 			
 			<tr bgcolor="#FFFFFF">
-				<td bgcolor="#0066FF"><div class="header_tabel_cari" style="height: 100%;">Data perhalaman</div></td><td>
+				<td bgcolor="#0066FF" class="header_tabel_cari" style="height: 100%;">Data perhalaman </td><td>
 					<div class="isi_tabel">
 						<input type="text" value="<?php echo $show; ?>" name="show" id="show" size="4" style="text-align:center;" onkeypress="return isNumberKey(event)">
 					</div>
@@ -200,7 +200,7 @@
 			</tr>
 			
 			<tr bgcolor="#FFFFFF">
-				<td width="150px" bgcolor="#0066FF"><div class="header_tabel_cari" style="height: 100%;">&nbsp;</div></td>
+				<td width="150px" bgcolor="#0066FF"  class="header_tabel_cari" style="height: 100%;">&nbsp; </td>
 				<td>
 					<div class="isi_tabel">
 						<a href="" onClick="javascript:list_data(0, document.getElementById('show').value, ''); return false;">
