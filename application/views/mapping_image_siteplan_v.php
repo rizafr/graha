@@ -12,11 +12,13 @@
 	}
 	
 	#frame-sp {
-		margin:15px auto 15px;
+		margin:50px auto 0px;
 		overflow:scroll;
 		position:relative;
-		width:auto;
+		width:100%;
 		height:auto;
+		margin-top: 130px;
+		margin-left: 30px;
 	}
 	
 	#detail-unit {
@@ -44,7 +46,7 @@
 	var winWidth = $(window).width() -50;
 	var winHeight = $(window).height() -30;
 	
-	$('#frame-sp').css('max-width', '97%');
+	$('#frame-sp').css('max-width', '100%');
 	$('#frame-sp').css('height', winHeight);
 
 	$(document).ready(function(){

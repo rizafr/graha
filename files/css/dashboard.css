@@ -24,8 +24,10 @@ body {
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	font-family: 'Lato', Calibri, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.42857143;
+	font-family: "Source Sans Pro",sans-serif;
+	font-weight: 500;
+	font-size: 14px !important;
+	line-height: 1.5;
 }
 
 a{
@@ -156,12 +158,9 @@ input[type="button"]:hover {
 
 input[type="text"] {
     border: 1px solid #d1d1d1;
-    font: bold 11px Arial,Helvetica,Sans-serif;
-    color: #000000;   
-    padding: 3px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+    font: 12px Arial,Helvetica,Sans-serif;
+    color: #333;   
+    padding: 4px;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
@@ -173,15 +172,17 @@ input[type="text"] {
 }
 
 input[type="text"]:focus {
-	-webkit-box-shadow: 1px 1px 12px #0066FF;
-    -moz-box-shadow: 1px 1px 12px #0066FF;
-    box-shadow: 1px 1px 12px #0066FF;
+	border: 1px solid #607d8b;
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 input[type="password"] {
     border: 1px solid #d1d1d1;
     font: bold 11px Arial,Helvetica,Sans-serif;
-    color: #000000;   
+    color: #333;   
     padding: 3px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -197,9 +198,11 @@ input[type="password"] {
 }
 
 input[type="password"]:focus {
-	-webkit-box-shadow: 1px 1px 12px #FF0000;
-    -moz-box-shadow: 1px 1px 12px #FF0000;
-    box-shadow: 1px 1px 12px #FF0000;
+	border: 1px solid #607d8b;
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 a.tombol {
@@ -242,9 +245,6 @@ textarea{
     font: bold 11px Arial,Helvetica,Sans-serif;
     color: #000000; 
     padding: 3px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
@@ -256,19 +256,18 @@ textarea{
 }
 
 textarea:focus{
-	-webkit-box-shadow: 1px 1px 12px #FF0000;
-    -moz-box-shadow: 1px 1px 12px #FF0000;
-    box-shadow: 1px 1px 12px #FF0000;
+	border: 1px solid #607d8b;
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 select{
 	border: 1px solid #d1d1d1;
-    font: bold 11px Arial,Helvetica,Sans-serif;
+    font:  11px Arial,Helvetica,Sans-serif;
     color: #000000;   
     padding: 3px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
     text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
@@ -280,9 +279,11 @@ select{
 }
 
 select:focus{
-	-webkit-box-shadow: 1px 1px 12px #FF0000;
-    -moz-box-shadow: 1px 1px 12px #FF0000;
-    box-shadow: 1px 1px 12px #FF0000;
+	border: 1px solid #607d8b;
+	-webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .button {
@@ -467,8 +468,7 @@ font-size: 0.9em;
 	    position: relative;
   border-radius: 3px;
   background: #ffffff;
-  border-top: 3px solid #d2d6de;
-  border-bottom: 3px solid #d2d6de;
+  border-left: 10px solid #d2d6de;
   margin-bottom: 20px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }

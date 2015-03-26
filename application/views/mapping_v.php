@@ -110,7 +110,7 @@ $this->load->view('menu_v');
 		font-weight:bold;
 		background:#555555; 
 		padding:10px;
-		margin:43px 0 0 0;
+		margin:43px 0 0 30px;
 	}
 </style>
 <div class="margin_center" style="width:1000px; margin-bottom:130px;">
