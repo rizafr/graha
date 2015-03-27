@@ -164,6 +164,7 @@ class Booking extends CI_Controller
 		$data['id_siteplan']			= $id_siteplan;
 		$data['data_unit'] 				= $this->unit_m->get_by_id($id_unit)->row();
 		$data['data_cara_pembayaran']	= $this->cara_pembayaran_m->get_all()->result();
+		$data['data_nup']				= $this->generate_nup();
 		
 		# Cek apakah unit yang dipesan adalah unit promo atau reguler
 		# Jika unit yang dipesan adalah promo, maka akan ditampilkan status promo
@@ -240,7 +241,7 @@ class Booking extends CI_Controller
 			
 			$data['action'] 				= base_url()."booking/save_pemesanan";
 
-			$data['id_pemesanan']			= "";			
+			$data['id_pemesanan']			= "";
 			$data['nama_lengkap']			= "";
 			$data['no_ktp']					= "";
 			$data['no_kartu_keluarga']		= "";			
@@ -313,7 +314,7 @@ class Booking extends CI_Controller
 				$data['nama_promo'] = $data_pemesanan->nama_promo;
 				$data['deskripsi']	= $data_pemesanan->deskripsi;
 				$data['id_promo']	= $data_pemesanan->id_promo;
-			}
+				}
 		}
 
 		$this->load->view('booking_form_pemesanan_v', $data);
@@ -420,6 +421,8 @@ class Booking extends CI_Controller
 										"diskon_tanah"			=> $this->input->post('diskon_tanah'),
 										"diskon_bangunan"		=> $this->input->post('diskon_bangunan')
 										);
+										
+			
 		}
 		else
 		{
@@ -441,8 +444,18 @@ class Booking extends CI_Controller
 										);
 		}
 
-		$id_pemesanan = $this->pemesanan_m->add($data_pemesanan);		
-
+		$id_pemesanan = $this->pemesanan_m->add($data_pemesanan);	
+		
+		//if($data_unit->status_unit == "Promo")
+		//{
+				$data_nup = array (	"id_pemesanan"		=> $id_pemesanan,
+									"nup"				=> $this->input->post('nup'),
+									"no_antrian"		=> $this->input->post('no_antrian')
+									);	
+		//}
+		# Menyimpan data nup
+		$id_nup = $this->pemesanan_m->add_nup($data_nup);
+		
 		# Mengupdate status unit
 		$this->unit_m->update_status_transaksi($this->input->post('id_unit'), "Booked");
 		
@@ -812,6 +825,36 @@ class Booking extends CI_Controller
 		}
 		
 		return $penambah."".$nomor_pemesanan_next."/".$type."/".$bulan."/".date('Y');
+	}
+	
+	# Generates nup
+	public function generate_nup()
+	{
+		$this->load->model('pemesanan_m');
+		
+		$data_pemesanan = $this->pemesanan_m->get_latest_data()->row();
+		
+		if(count($data_pemesanan) > 0){
+			$nomor_pemesanan_asal 	= explode("/", $data_pemesanan->nomor_pemesanan);
+		}else{
+			$nomor_pemesanan_asal	= 0;
+		}
+		
+		$nomor_pemesanan_next	= (int)$nomor_pemesanan_asal[0] + 1;
+		
+		if(strlen($nomor_pemesanan_next) == 1){
+			$penambah = '000';
+		}else if(strlen($nomor_pemesanan_next) == 2){
+			$penambah = '00';
+		}else if(strlen($nomor_pemesanan_next) == 3){
+			$penambah = '0';
+		}else{
+			$penambah = '';
+		}
+		
+		
+		
+		return $penambah."".$nomor_pemesanan_next;
 	}
 
 	# 	Mencetak form pemesanan

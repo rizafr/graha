@@ -3,6 +3,7 @@
 class Pemesanan_m extends CI_Model
 {
 	private $tbl_pemesanan = 'tbl_pemesanan';
+	private $tbl_nup = 'tbl_nup';
 
 	function __Construct()
 	{
@@ -14,6 +15,7 @@ class Pemesanan_m extends CI_Model
 	{
 		$query = $this->db->query("	SELECT 		tbl_promo.*, 
 												tbl_pemesanan.*, 
+												tbl_nup.*,
 												CONCAT(tbl_pemesanan.tipe_pembayaran, ' ', tbl_pemesanan.tahap_pembayaran) AS cara_pembayaran,
 												tbl_agent.team as 'nama_agent', sm.nama_lengkap AS sales_manager, tbl_user.nama_lengkap as 'nama_sales', 
 												tbl_customer.nama_lengkap, tbl_customer.no_ktp, tbl_customer.no_npwp, tbl_customer.telpon, tbl_customer.hp, 
@@ -27,6 +29,7 @@ class Pemesanan_m extends CI_Model
 									INNER JOIN 	tbl_customer ON tbl_pemesanan.id_customer = tbl_customer.id_customer
 									INNER JOIN 	tbl_unit ON tbl_pemesanan.id_unit = tbl_unit.id_unit
 									INNER JOIN 	tbl_cluster ON tbl_unit.id_cluster = tbl_cluster.id_cluster
+									INNER JOIN 	tbl_nup ON tbl_pemesanan.id_pemesanan = tbl_nup.id_pemesanan
 									LEFT JOIN 	tbl_type ON tbl_unit.id_type = tbl_type.id_type
 									LEFT JOIN 	tbl_promo ON tbl_pemesanan.id_promo = tbl_promo.id_promo
 									WHERE  		tbl_pemesanan.id_pemesanan = '".$id_pemesanan."'");
@@ -379,6 +382,12 @@ class Pemesanan_m extends CI_Model
 	{
 		$this->db->insert($this->tbl_pemesanan, $data);
 		return $this->db->insert_id();
+	}
+	
+	# Menyimpan data nup
+	function add_nup($data)
+	{
+		$this->db->insert($this->tbl_nup, $data);
 	}
 
 	# Mengubah data pemesanan

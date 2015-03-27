@@ -285,7 +285,6 @@ if ($status == "Promo")
 	}
 	
 	function auto(){
-			
 			var luas_tanah			= <?php echo $data_unit->luas_tanah; ?>;
 			var luas_bangunan		= <?php echo $data_unit->luas_bangunan; ?>;
 			var harga_tanah_m2		= <?php echo $data_unit->harga_tanah_m2; ?>;
@@ -314,6 +313,7 @@ if ($status == "Promo")
 			var kpr_5_tahun			= PMT(suku_bunga / 12, 60, -plafon_kpr);
 			var kpr_10_tahun		= PMT(suku_bunga / 12, 120, -plafon_kpr);
 			var kpr_15_tahun		= PMT(suku_bunga / 12, 180, -plafon_kpr);
+			
 			
 			$("#harga_jual_inc_ppn").html(fm(harga_jual_inc_ppn));
 			$("#tanda_jadi").html(fm(tanda_jadi));
@@ -549,7 +549,8 @@ $this->load->view('menu_v');
 					<td width="200" bgcolor="#999999"><div class="isi_tabel"><strong>NUP<span class="required_star">*</span></strong></div></td>
 					<td>
 						<div class="isi_tabel">
-							<input type="text" name="nup" id="nup" size="40" value="<?php echo $nama_lengkap; ?>">
+							<input type="text" name="nup" id="nup" size="40" value="<?php echo $data_unit->kode_unit; ?>-<?php echo $data_nup; ?>">
+							<input type="hidden" name="no_antrian" id="no_antrian" size="40" value="<?php echo $data_nup; ?>">
 						</div>
 					</td>
 				</tr>
