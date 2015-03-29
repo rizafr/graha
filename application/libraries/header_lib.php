@@ -14,7 +14,7 @@ class Header_lib{
 		<title>E-Marketing | PT. Pembangunan Jaya Ancol Tbk</title>
 		<link rel="shortcut icon" type="image/x-icon" href="'.base_url().'files/images/favicon.ico" />
 		<script type="text/javascript" src="'.base_url().'files/js/jquery.js"></script>
-		<link rel="stylesheet" type="text/css" href="'.base_url().'files/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="'.base_url().'files/login/css/style.css" />
 		<script type="text/javascript">
 			var base_url = "'.base_url().'";
 		</script>

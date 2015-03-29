@@ -1,69 +1,51 @@
 <?php echo $header; ?>
-<script type="text/javascript">
-$(document).ready(function() {
-	$(".username").focus(function() {
-		$(".user-icon").css("left","-48px");
-	});
-	$(".username").blur(function() {
-		$(".user-icon").css("left","0px");
-	});
+
+    <span href="#" class="button" id="toggle-login">E- Marketing</span>
+    
+	<div id="login">
 	
-	$(".password").focus(function() {
-		$(".pass-icon").css("left","-48px");
+		<h1>Silakan Login</h1>	
+			<?php
+				if($this->session->flashdata('error') != "")
+				{
+					?>
+					<div class="peringatan" style="z-index:10000"> <?php echo $this->session->flashdata('error'); ?> </div>
+					<?php
+				}
+				
+				if($this->session->flashdata('success') != "")
+				{
+					?>
+					<div class="peringatan" style="z-index:10000"> <?php echo $this->session->flashdata('success'); ?> </div>
+					<?php
+				}
+				?> 
+			
+			<form id="form1" action="<?php echo base_url(); ?>login/process" method="post" autocomplete="off">
+			 	<input type="text" name="username" value="" placeholder="masukan username" required />
+				<input type="password" name="password" value="" placeholder="masukan password" required/>
+				<input name="captcha" type="captcha" required title="Silakan Isi Capctha" />
+						<div class="captcha"><?php echo $captcha; ?></div>
+				<p><span>&nbsp;</span><input class="submit" type="submit" name="name" value="login" title="Klik jika sudah mengisi username dan password"/></p>
+			 </form>				
+    </div>
+    <footer>
+		<p>PT. Pembangunan Jaya Ancol Tbk</p>
+    </footer> 
+  
+  <!-- javascript at the bottom for fast page loading -->
+  <script src="<?php echo base_url(); ?>files/login/js/index.js"></script>  
+  <script>
+		//<![CDATA[
+	$(document.body).append('<div id="page-loader"></div>');
+	$(window).on("beforeunload", function() {
+		$('#page-loader').fadeIn(500).delay(9000).fadeOut(1000);
 	});
-	$(".password").blur(function() {
-		$(".pass-icon").css("left","0px");
-	});
+	//]]>
+  </script>
+  <!-- javascript untuk validasi dengan mengacu ke id form1 pada form-->
+<script>
+	$(document).ready(function() {
+	$("#form1").validate();
 });
 </script>
-
-</head>
-<body>
-
-<div id="wrapper">
-	
-    <?php
-    if($this->session->flashdata('error') != "")
-	{
-		?>
-		<div class="error_login" style="z-index:10000"> <?php echo $this->session->flashdata('error'); ?> </div>
-		<?php
-	}
-	
-	if($this->session->flashdata('success') != "")
-	{
-		?>
-		<div class="success_login" style="z-index:10000"> <?php echo $this->session->flashdata('success'); ?> </div>
-		<?php
-	}
-	?>   
-    
-    <div class="user-icon"></div>
-    <div class="pass-icon"></div>
-
-    <form name="login-form" class="login-form" action="<?php echo base_url(); ?>login/process" method="post">
-    
-        <div class="header" style="height:78px;">
-            <div style="position:absolute; margin:5px 0 0 -9px"><img src="<?php echo base_url(); ?>files/images/logo_PembangunanJayaAncol_login.png"></div>
-        </div>
-        
-        <div class="content">
-            <input name="username" type="text" class="input username" value="" placeholder="Username" />
-            <input name="password" type="password" class="input password" value="" placeholder="Password" />
-			<input name="captcha" type="text" class="input" style="width:50px;margin-top:25px;text-align:center;" />
-			<div style="float:right;width:100px;margin-top:26px;"><?php echo $captcha; ?></div>
-        </div>
-        
-        <div class="footer">
-            <input type="submit" name="submit" value="Login" class="button" />
-            <div class="footer_login">Copyright &copy; 2015 - PT Pembangunan Jaya Ancol</div>
-        </div>
-    
-    </form>
-
-</div>
-
-<div class="gradient"></div>
-
-</body>
-</html>
