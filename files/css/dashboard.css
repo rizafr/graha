@@ -5,7 +5,9 @@
 	margin: 0;
 	padding: 0;
 }
-
+/* Import fonts 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic); */
+@import url(fonts.css);
 body {
 	background: 
 		/* top, transparent red, faked with gradient */ 
@@ -23,8 +25,7 @@ body {
 	background-color: #222d32;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
-	font-family: 'Lato', Calibri, Arial, sans-serif;
-	font-family: "Source Sans Pro",sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	font-size: 14px !important;
 	line-height: 1.5;
@@ -340,9 +341,8 @@ select:focus{
 	z-index: 9999;
 	width: 100%;
 	  /*background: #222d32;*/
-	  background: none repeat scroll 0% 0% #0085BE;
+	    background: #3e433e!important;
 	  padding-top:10px;
-	  box-shadow: 0px -2px rgba(0, 86, 132, 0.2) inset;
 }
 
 .list_menu{
@@ -354,6 +354,22 @@ select:focus{
 	float:right;
 	padding-top:5px;
 	padding-right:5px;
+}
+
+.submenu,
+.submenu2,
+.submenu3{
+	/*background: #222d32;*/
+	background: none repeat scroll 0% 0% #3e433e;
+	position: absolute;
+	left: -10px;
+	top:25px;
+	z-index: 999999;
+	width: 150px;
+	display: none;
+	margin-left: 10px;
+	padding:5px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 #top_profile{
@@ -379,6 +395,8 @@ select:focus{
 	float: left;
 	}
 .user-detail{
+	font-weight:400;
+	color: #ECECFB;
 	display: inline-block;
 	margin: 5px 0px 0px 0px;
 	}
@@ -388,8 +406,8 @@ select:focus{
 .logo-bg {
 	display: block;
   float: left;
-  margin-left:20px;
-  max-width: 500px;
+  padding-left:20px;
+  width: 500px;
   font-weight: 300;
   font-size: 14px;
   line-height: 30px;
@@ -405,30 +423,67 @@ select:focus{
   -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.list_menu a{
+	text-decoration: none;
+	color:#FFF;
+}
+
+.list_menu a:hover{
+	text-shadow: 0 1px 1px #000000;
+	color: #00BFFF;
+}
+
+.list_menu a:visited{
+	text-shadow: 0 1px 1px #000000;
+	border-bottom:2px solid #ccc;	
+	padding: 10px;
+}
+
 /* Desain untuk perangkat dengan layar 600px kebawah*/
 @media screen and (max-height: 25.25em), screen and (max-width: 44.3125em), screen and (max-width: 66.3125em) {
     #top_panel {
         height: auto;
         border-bottom: 0;
-         background: none repeat scroll 0% 0% #0085BE;
+        background: none repeat scroll 0% 0% #0085BE;
 		width: 100%;
 		margin: 0 auto;
+		  color: #333333;
+		   border-bottom: 1px solid #f0f0f0;
+        border-right: 1px solid #f0f0f0;
     } 
 	
 	.list_menu {
-        height: auto;
-        border-bottom: 0;
-         background: none repeat scroll 0% 0% #0085BE;
-		 width: 100%;
-		border-bottom: 2px solid #6fbbe9;
+		  color: #333333;
+         width: 100%;
+        float: none;
+        display: block;
+        background: #ffffff;
 		text-align:center;	
     }
 	.list_menu a {
+		  color: #333333;
+		 border-bottom: 1px solid #f0f0f0;
+        border-right: 1px solid #f0f0f0;
 		display: block;
 		width: 100%;
 		left: 0;
 		margin: 0;
 		padding: 0;
+	}
+	
+	.submenu,
+	.submenu2,
+	.submenu3{
+		/*background: #222d32;*/
+		background: none repeat scroll 0% 0% #0085BE;
+		position: relative;
+		z-index: 999999;
+		width: 100%;
+		display: none;
+		top:0;
+		margin: 0;
+		padding: 0;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 	}
     
     #top_panel, .list-menu {
@@ -452,10 +507,10 @@ select:focus{
 		 position: relative;
 	}
 	.user{
-	position: relative;
-	height:48px;
-	width:48px;
-	float: left;
+		position: relative;
+		height:48px;
+		width:48px;
+		float: left;
 	}
 	.user-detail{
 		display: inline-block;
@@ -463,43 +518,28 @@ select:focus{
 		}
 		
 
-
 	.logo-bg {
+		 background-color: #00c0ef !important;
+		 width: 100%;
 		display: block;
-	  float: left;
-	  margin-left:20px;
-	  max-width: 500px;
-	  font-weight: 300;
-	  font-size: 14px;
-	  line-height: 30px;
-	  letter-spacing: 1px;
-	  text-transform: uppercase;
-	  color: #FFFFF2;
-	  user-select: none;
-	  -webkit-user-select: none;
-	  -khtml-user-select: none;
-	  -moz-user-select: none;
-	  -ms-user-select: none;
-	  -webkit-touch-callout: none;
-	  -webkit-font-smoothing: subpixel-antialiased;
+		  float: left;
+		  font-weight: 300;
+		  font-size: 14px;
+		  line-height: 30px;
+		  letter-spacing: 1px;
+		  text-transform: uppercase;
+		  color: #FFFFF2;
+		  user-select: none;
+		  -webkit-user-select: none;
+		  -khtml-user-select: none;
+		  -moz-user-select: none;
+		  -ms-user-select: none;
+		  -webkit-touch-callout: none;
+		  -webkit-font-smoothing: subpixel-antialiased;
 	}
 }
 
-.list_menu a{
-	text-decoration: none;
-	color:#FFF;
-}
 
-.list_menu a:hover{
-	text-shadow: 0 1px 1px #000000;
-	color: #00BFFF;
-}
-
-.list_menu a:visited{
-	text-shadow: 0 1px 1px #000000;
-	border-bottom:2px solid #ccc;	
-	padding: 10px;
-}
 
 .list_menu2{
 	color: #FFF;
@@ -529,21 +569,7 @@ select:focus{
 	position: relative;
 }
 
-.submenu,
-.submenu2,
-.submenu3{
-	/*background: #222d32;*/
-	background: none repeat scroll 0% 0% #0085BE;
-	position: absolute;
-	left: -10px;
-	top:25px;
-	z-index: 999999;
-	width: 150px;
-	display: none;
-	margin-left: 10px;
-	padding:5px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
-}
+
 
 #menu_master li a,
 #menu_report li a,
@@ -590,20 +616,20 @@ select:focus{
 }
 
 #frame_data .header_data{
-	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
 	text-transform: uppercase;
 	font-size: 24px;
 	margin-bottom:10px;
 	width:300px;
-	  color: #444;
-	  padding-left:10px;
-	  padding-top:5px;
-	  padding-bottom:5px;
-	    position: relative;
+	color: #444;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	position: relative;
   border-radius: 3px;
-  background: #ffffff;
-  border-left: 10px solid #d2d6de;
+  background: #C8E6C9;
+  border-left: 10px solid #4CAF50;
   margin-bottom: 20px;
   box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }

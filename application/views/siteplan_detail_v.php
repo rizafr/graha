@@ -40,7 +40,7 @@
 
 <style type="text/css">
 	#keterangan-siteplan {
-		width:300px; 
+		width:320px; 
 		float:right;
 		font-family: Verdana,Geneva,sans-serif;
 		color: #FFFFFF;

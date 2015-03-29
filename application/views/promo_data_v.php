@@ -16,11 +16,11 @@
 	<div class="frame_tabel radius transparent">
 		<table width="1000px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC">
 			<tr bgcolor="#FFFFFF">
-				<td width="350px"><div class="header_tabel">Nama Promo</div></td>
-				<td width="200px"><div class="header_tabel">Tanggal Mulai</div></td>
-				<td width="200px"><div class="header_tabel">Tanggal Berakhir</div></td>
-				<td width="150px"><div class="header_tabel">Status</div></td>
-				<td colspan="4"><div class="header_tabel">&nbsp;</div></td>
+				<td width="350px" class="header_tabel">Nama Promo </td>
+				<td width="200px" class="header_tabel">Tanggal Mulai </td>
+				<td width="200px"  class="header_tabel">Tanggal Berakhir</td>
+				<td width="150px" class="header_tabel">Status </td>
+				<td colspan="4"  class="header_tabel">&nbsp; </td>
 			</tr>
 			
 			<?php
