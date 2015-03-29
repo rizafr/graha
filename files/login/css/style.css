@@ -202,7 +202,7 @@ footer a:hover {
 	bottom:0;
 	left:0;
 	z-index:999999;
-	background:#fff url(/images/Loading1.gif) no-repeat 50% 50%;
+	background:#fff url(../logo/loader2.gif) no-repeat 50% 50%;
 	padding:1em 1.2em;
 	display:none
 }
