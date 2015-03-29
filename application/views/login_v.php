@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 
-    <span href="#" class="button" id="toggle-login">E- Marketing</span>
+    <span href="#" class="button" id="toggle-login">E- Marketing <br /> PT. Pembangunan Jaya Ancol Tbk</span>
     
 	<div id="login">
 	
