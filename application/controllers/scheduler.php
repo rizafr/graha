@@ -84,7 +84,7 @@ class Scheduler extends CI_Controller
 			
 			if ( (($tanggal_mulai-$now) > 0) OR (($tanggal_akhir-$now) < 0) )
 			{
-				$this->promo_m->update($p->id_promo, array('status_promo' => '0'));
+				$this->promo_m->update($p->id_promo, array('status_promo' => '1'));
 				$found = "found";
 			}
 		}

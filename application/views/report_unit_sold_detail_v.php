@@ -202,7 +202,7 @@ $this->load->view('menu_v');
 			#td-height td { height:19px; }
 		</style>
 
-		<div class="frame_tabel radius transparent" style="width:1000px" id="td-height">		
+		<div class="frame_tabel radius transparent" style="width:1002px" id="td-height">		
 			<table width="500px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC" style="float:left">
 				<tr bgcolor="#FFFFFF">
 					<td width="200" bgcolor="#999999"><div class="isi_tabel"><strong>Nama Lengkap</strong></div></td>

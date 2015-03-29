@@ -160,9 +160,9 @@ if($this->access_lib->_if("adm"))
 		<a class="account2">Master</a>
 		<div class="submenu" id="submenu2">
 			<ul class="root">				
+				<li><a href="<?php echo base_url(); ?>cluster">Cluster</a></li>
 				<li><a href="<?php echo base_url(); ?>unit">Stok Unit</a></li>
 				<li><a href="<?php echo base_url(); ?>promo">Promo</a></li>
-				<li><a href="<?php echo base_url(); ?>cluster">Cluster</a></li>
 				<li><a href="<?php echo base_url(); ?>mapping">Mapping</a></li>
 				<li><a href="<?php echo base_url(); ?>timeout">Timeout</a></li>
 				<li><a href="<?php echo base_url(); ?>cara_pembayaran">Cara Pembayaran</a></li>
@@ -215,9 +215,9 @@ elseif($this->access_lib->_if("mgr"))
 		<a class="account2">Master</a>
 		<div class="submenu" id="submenu2">
 			<ul class="root">				
+				<li><a href="<?php echo base_url(); ?>cluster">Cluster</a></li>
 				<li><a href="<?php echo base_url(); ?>unit">Stok Unit</a></li>
 				<li><a href="<?php echo base_url(); ?>promo">Promo</a></li>
-				<li><a href="<?php echo base_url(); ?>cluster">Cluster</a></li>
 				<li><a href="<?php echo base_url(); ?>timeout">Timeout</a></li>
 				<li><a href="<?php echo base_url(); ?>cara_pembayaran">Cara Pembayaran</a></li>
 			</ul>
@@ -251,9 +251,9 @@ elseif($this->access_lib->_if("stk"))
 		<a class="account2">Master</a>
 		<div class="submenu" id="submenu2">
 			<ul class="root">				
+				<li><a href="<?php echo base_url(); ?>cluster">Cluster</a></li>
 				<li><a href="<?php echo base_url(); ?>unit">Stok Unit</a></li>
 				<li><a href="<?php echo base_url(); ?>promo">Promo</a></li>
-				<li><a href="<?php echo base_url(); ?>cluster">Cluster</a></li>
 				<li><a href="<?php echo base_url(); ?>mapping">Mapping</a></li>
 			</ul>
 		</div>
