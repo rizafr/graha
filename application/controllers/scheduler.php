@@ -6,6 +6,7 @@ class Scheduler extends CI_Controller
 	function __Construct()
 	{
 		parent::__Construct();
+		date_default_timezone_set("Asia/Jakarta");
 	}
 	
 	# Menghapus data unit yang berhubungan dengan siteplan
@@ -72,7 +73,7 @@ class Scheduler extends CI_Controller
 	{
 		$found = "";
 		$now = time();
-		
+		echo  $now ;
 		$this->load->model('promo_m');
 		$data_promo = $this->promo_m->get_active_promo()->result();
 		

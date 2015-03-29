@@ -34,6 +34,11 @@ class Header_lib{
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<title>E-Marketing | PT. Pembangunan Jaya Ancol Tbk</title>
 		<link rel="shortcut icon" type="image/x-icon" href="'.base_url().'files/images/favicon.ico" />
+		
+		<link rel="stylesheet" type="text/css" href="'.base_url().'files/menu/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="'.base_url().'files/menu/css/component.css" />
+		<script src="'.base_url().'files/menu/js/modernizr.custom.js"></script>
+		
 		<script type="text/javascript" src="'.base_url().'files/js/jquery.js"></script>
 		<script type="text/javascript" src="'.base_url().'files/js/jquery.ui.core.js"></script>
 		<script type="text/javascript" src="'.base_url().'files/js/jquery.ui.datepicker.js"></script>

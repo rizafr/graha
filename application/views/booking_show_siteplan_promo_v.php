@@ -29,7 +29,7 @@ interval_promo();
 	margin:20px; 
 	border:1px #666 solid; 
 	width: 435px; 
-	height:110px; 
+	height:autp; 
 	padding:10px; 
 	background-image: url('<?php echo base_url(); ?>files/images/transparent-black.png'); 
 	float:left;
@@ -70,10 +70,10 @@ $this->load->view('menu_v');
 			</div>
 			<div style="color:#FFF; width:250px; position:absolute; margin:0 0 0 170px;">
 				<span style="font-weight: bold; font-size: 12px;"><?php echo $data_siteplan->nama_siteplan; ?></span><br />
-				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:90px;">Jumlah Unit</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total; ?> Unit</span><br />
-				<span style="display: inline-block; width:70px; font-size: 10px; padding-left:100px;">Available</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total_available; ?> Unit</span><br />
-				<span style="display: inline-block; width:70px; font-size: 10px; padding-left:100px;">Booked</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total_booked; ?> Unit</span><br />
-				<span style="display: inline-block; width:70px; font-size: 10px; padding-left:100px;">Sold</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total_sold; ?> Unit</span>
+				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:30px;">Jumlah Unit</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total; ?> Unit</span><br />
+				<span style="display: inline-block; width:70px; font-size: 10px; padding-left:30px;">Available</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total_available; ?> Unit</span><br />
+				<span style="display: inline-block; width:70px; font-size: 10px; padding-left:30px;">Booked</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total_booked; ?> Unit</span><br />
+				<span style="display: inline-block; width:70px; font-size: 10px; padding-left:30px;">Sold</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jua->total_sold; ?> Unit</span>
 			</div>
 		</div>
 	</a>
@@ -91,10 +91,10 @@ $this->load->view('menu_v');
 			</div>
 			<div style="color:#FFF; width:250px; position:absolute; margin:0 0 0 170px;">
 				<span style="display: inline-block; margin-bottom:7px; font-weight: bold; font-size: 12px;">Unit Lainnya</span><br />
-				<span style="display: inline-block; width:100px; font-size: 10px; padding-left:80px;">Jumlah Unit</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total; ?> Unit</span><br />
-				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:100px;">Available</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total_available; ?> Unit</span><br />
-				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:100px;">Booked</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total_booked; ?> Unit</span><br />
-				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:100px;">Sold</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total_sold; ?> Unit</span>
+				<span style="display: inline-block; width:100px; font-size: 10px; padding-left:30px;">Jumlah Unit</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total; ?> Unit</span><br />
+				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:30px;">Available</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total_available; ?> Unit</span><br />
+				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:30px;">Booked</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total_booked; ?> Unit</span><br />
+				<span style="display: inline-block; width:80px; font-size: 10px; padding-left:30px;">Sold</span><span style="font-size: 10px; text-align:right;"> : <?php echo $jual->total_sold; ?> Unit</span>
 			</div>
 		</div>
 	</a>

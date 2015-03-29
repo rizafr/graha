@@ -283,7 +283,7 @@ elseif($this->access_lib->_if("ksr"))
 				<li><a href="<?php echo base_url(); ?>report/promo">Booking Promo</a></li>
 				<li><a href="<?php echo base_url(); ?>report/timeout">Book Timeout</a></li>
 				<li><a href="<?php echo base_url(); ?>report/unit_sold">Unit Sold</a></li>
-				</ul>
+			</ul>
 		</div>
 	</div>
 	<div class="list_menu" id="menu_booking">

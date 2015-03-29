@@ -39,11 +39,11 @@ img{
 }
 
 .loading {
-	background-image: url(../images/loader.gif);
+	background-image: url(../images/loader2.gif);
 	display:block; 
 	margin:0 auto;
-	width:50px;
-	height:50px;
+	width:128px;
+	height:128px;
 }
 table{
 	border: 1px solid #ccc;
@@ -326,6 +326,25 @@ select:focus{
 	filter:alpha(opacity=95);
 }
 
+/******************************************************/
+/*************** Desain Menu ***************/
+/******************************************************/
+
+/* MENU PALING ATAS*/
+#top_panel{
+	height: 50px;
+	font-size: 0.9em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width: 100%;
+	  /*background: #222d32;*/
+	  background: none repeat scroll 0% 0% #0085BE;
+	  padding-top:10px;
+	  box-shadow: 0px -2px rgba(0, 86, 132, 0.2) inset;
+}
+
 .list_menu{
 	color: #FFF;
    	text-shadow: 0 1px 1px #000000;	
@@ -335,6 +354,135 @@ select:focus{
 	float:right;
 	padding-top:5px;
 	padding-right:5px;
+}
+
+#top_profile{
+	min-width:230px;
+	min-height:44px;
+	position: absolute;
+	top:60px;
+	right:10px;
+	z-index:9999;
+	border-radius: 3px;
+     background-color: #00c0ef !important;
+	 border-left: 10px solid #00A3D9;
+	margin-bottom: 20px;
+	padding-left:5px;
+	padding-top:5px;
+}
+
+
+.user{
+	position: relative;
+	height:48px;
+	width:48px;
+	float: left;
+	}
+.user-detail{
+	display: inline-block;
+	margin: 5px 0px 0px 0px;
+	}
+	
+
+
+.logo-bg {
+	display: block;
+  float: left;
+  margin-left:20px;
+  max-width: 500px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFF2;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+/* Desain untuk perangkat dengan layar 600px kebawah*/
+@media screen and (max-height: 25.25em), screen and (max-width: 44.3125em), screen and (max-width: 66.3125em) {
+    #top_panel {
+        height: auto;
+        border-bottom: 0;
+         background: none repeat scroll 0% 0% #0085BE;
+		width: 100%;
+		margin: 0 auto;
+    } 
+	
+	.list_menu {
+        height: auto;
+        border-bottom: 0;
+         background: none repeat scroll 0% 0% #0085BE;
+		 width: 100%;
+		border-bottom: 2px solid #6fbbe9;
+		text-align:center;	
+    }
+	.list_menu a {
+		display: block;
+		width: 100%;
+		left: 0;
+		margin: 0;
+		padding: 0;
+	}
+    
+    #top_panel, .list-menu {
+        display: block;
+        background-color: #3498db;
+        width: 100%;
+        position: relative;
+        color: #ffffff;
+    }
+    #top_profile{
+		min-width:230px;
+		min-height:44px;
+		top:6px;
+		right:10px;
+		border-radius: 3px;
+		 background-color: #00c0ef !important;
+		 border-left: 10px solid #00A3D9;
+		margin-bottom: 20px;
+		padding-left:5px;
+		padding-top:5px;
+		 position: relative;
+	}
+	.user{
+	position: relative;
+	height:48px;
+	width:48px;
+	float: left;
+	}
+	.user-detail{
+		display: inline-block;
+		margin: 5px 0px 0px 0px;
+		}
+		
+
+
+	.logo-bg {
+		display: block;
+	  float: left;
+	  margin-left:20px;
+	  max-width: 500px;
+	  font-weight: 300;
+	  font-size: 14px;
+	  line-height: 30px;
+	  letter-spacing: 1px;
+	  text-transform: uppercase;
+	  color: #FFFFF2;
+	  user-select: none;
+	  -webkit-user-select: none;
+	  -khtml-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  -webkit-touch-callout: none;
+	  -webkit-font-smoothing: subpixel-antialiased;
+	}
 }
 
 .list_menu a{
@@ -375,6 +523,45 @@ select:focus{
 	margin-right: 20px;
 }
 
+#menu_master,
+#menu_report,
+#menu_booking{ 
+	position: relative;
+}
+
+.submenu,
+.submenu2,
+.submenu3{
+	/*background: #222d32;*/
+	background: none repeat scroll 0% 0% #0085BE;
+	position: absolute;
+	left: -10px;
+	top:25px;
+	z-index: 999999;
+	width: 150px;
+	display: none;
+	margin-left: 10px;
+	padding:5px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+#menu_master li a,
+#menu_report li a,
+#menu_booking li a{
+	color: #FFF;
+   	text-shadow: 0 1px 1px #000000;
+	font-size: 12px;
+	padding:4px;
+	display:block;
+}
+
+#menu_master li a:hover,
+#menu_report li a:hover,
+#menu_booking li a:hover{
+	color:#00A3D9;
+	text-decoration: none;
+}
+
 #top_panel2{
 	width:100%;
 	height:20px;
@@ -389,65 +576,13 @@ select:focus{
 	border-bottom: 1px #999999 solid;
 }
 
-#top_profile{
-	min-width:230px;
-	min-height:44px;
-	position: absolute;
-	top:60px;
-	right:10px;
-	z-index:9999;
-  border-radius: 3px;
-     background-color: #00c0ef !important;
-	 border-left: 10px solid #00A3D9;
-  margin-bottom: 20px;
-  padding-left:5px;
-  padding-top:5px;
-}
 
-.user{
-	position: relative;
-	height:48px;
-	width:48px;
-	float: left;
-	}
-.user-detail{
-	display: inline-block;
-	margin: 5px 0px 0px 0px;
-	}
-	
-#top_panel{
-	height: 40px;
-font-size: 0.9em;
-	position: fixed;
-	top: 0;
-	left: 0;
-  z-index: 9999;
-  width: 100%;
-	  /*background: #222d32;*/
-	  background: none repeat scroll 0% 0% #0085BE;
-	  padding-top:10px;
-	  box-shadow: 0px -2px rgba(0, 86, 132, 0.2) inset;
-}
 
-.logo-bg {
-	  display: block;
-  float: left;
-  margin-left:20px;
-  max-width: 560px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #FFFFF2;
-  user-select: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
+
+
+/* END OF MENU*/ 
+
+
 
 #frame_data{
 	width:100%;
@@ -599,44 +734,7 @@ font-size: 0.9em;
     cursor: pointer;
 }
 
-#menu_master,
-#menu_report,
-#menu_booking{ 
-	position: relative;
-}
 
-.submenu,
-.submenu2,
-.submenu3{
-	/*background: #222d32;*/
-	background: none repeat scroll 0% 0% #0085BE;
-	position: absolute;
-	left: -10px;
-	top:25px;
-	z-index: 999999;
-	width: 150px;
-	display: none;
-	margin-left: 10px;
-	padding:5px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
-}
-
-#menu_master li a,
-#menu_report li a,
-#menu_booking li a{
-	color: #FFF;
-   	text-shadow: 0 1px 1px #000000;
-	font-size: 12px;
-	padding:4px;
-	display:block;
-}
-
-#menu_master li a:hover,
-#menu_report li a:hover,
-#menu_booking li a:hover{
-	color:#00A3D9;
-	text-decoration: none;
-}
 
 a.account,
 a.account1,
