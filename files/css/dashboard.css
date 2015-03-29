@@ -10,11 +10,17 @@
 @import url(fonts.css);
 body {
 	background: 
-		/* top, transparent red, faked with gradient */ 
+		/* top, transparent red, faked with gradient */
 		linear-gradient(
-		  rgba(3, 0, 0, 0.45), 
-		 rgba(3, 0, 0, 0.45)
+		  rgba(3, 0, 0, 0.70), 
+		 rgba(3, 0, 0, 0.55)
 		),
+		/*repeating-linear-gradient(
+			  45deg,
+			  rgba(255, 255, 255, 0.2),
+			  rgba(0, 0, 0, 0.2) 15px,
+			  rgba(255, 255, 255, 0.3) 10px
+			),*/
 		/* bottom, image */
 		url(../images/bgperumahan.jpg);
 		
