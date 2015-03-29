@@ -8,7 +8,7 @@
 		<tr bgcolor="#FFFFFF">
 			<td width="160" bgcolor="#0066FF">
 				<div class="header_tabel_cari" style="height: 100%;">
-					<input type="radio" name="filter" value="nomor_pemesanan" <?php if($filter == "nomor_pemesanan"){ echo "checked"; } ?>>&nbsp;Nomor Pemesanan
+					<input type="radio" name="filter" value="nomor_pemesanan" <?php if($filter == "nomor_pemesanan"){ echo "checked"; } ?>>&nbsp;NUP
 				</div>
 			</td>
 			<td>
@@ -95,7 +95,7 @@
 <div class="frame_tabel_cust radius transparent" style="float:none;">
 	<table width="100%" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC">
 		<tr bgcolor="#FFFFFF">
-			<td width="" class="header_tabel_cust"><div style="color:#FFF; text-align: center;">Nomor Pemesanan</div></td>
+			<td width="" class="header_tabel_cust"><div style="color:#FFF; text-align: center;">NUP</div></td>
 			<td width="" class="header_tabel_cust"><div style="color:#FFF; text-align: center;">Nama Pemesan</div></td>
 			<td width="" class="header_tabel_cust"><div style="color:#FFF; text-align: center;">Tgl Pemesanan</div></td>
 			<td width="" class="header_tabel_cust nowrap"><div style="color:#FFF; text-align: center;">Tgl TJ</div></td>

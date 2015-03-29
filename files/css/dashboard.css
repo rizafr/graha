@@ -672,6 +672,7 @@ select:focus{
 	float:left;
 	background-color:#FFF;
 	border-radius:1px;
+	width: 1002px !important;
 }
 
 .header_tabel_cust{

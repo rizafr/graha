@@ -202,7 +202,16 @@ $this->load->view('menu_v');
 		</style>
 
 		<div class="frame_tabel radius transparent" style="width:1000px" id="td-height">		
-			<table width="500px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC" style="float:left">
+			<table width="495px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC" style="float:left">
+				<tr bgcolor="#FFFFFF">
+					<td width="200" bgcolor="#999999" class="isi_tabel"><strong>NUP</strong></td>
+					<td>
+						<div class="isi_tabel">
+							<?php echo $pemesanan->nomor_pemesanan; ?>
+						</div>
+					</td>
+				</tr>
+				
 				<tr bgcolor="#FFFFFF">
 					<td width="200" bgcolor="#999999" class="isi_tabel"><strong>Nama Lengkap</strong></td>
 					<td>

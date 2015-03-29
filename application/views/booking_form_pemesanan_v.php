@@ -544,7 +544,7 @@ $this->load->view('menu_v');
 					<td bgcolor="#0066FF"><div class="header_tabel">Data Pemesan</div></td>
 				</tr>
 			</table>
-			<table width="500px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC" style="float:left">
+			<table width="495px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC" style="float:left">
 				<tr bgcolor="#FFFFFF">
 					<td width="200" bgcolor="#999999"><div class="isi_tabel"><strong>Nama Lengkap<span class="required_star">*</span></strong></div></td>
 					<td>
