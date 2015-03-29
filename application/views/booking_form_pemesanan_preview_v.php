@@ -204,14 +204,6 @@ $this->load->view('menu_v');
 		<div class="frame_tabel radius transparent" style="width:1000px" id="td-height">		
 			<table width="500px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC" style="float:left">
 				<tr bgcolor="#FFFFFF">
-					<td width="200" bgcolor="#999999"><div class="isi_tabel"><strong>NUP</span></strong></div></td>
-					<td>
-						<div class="isi_tabel">
-							<b><?php echo $pemesanan->nup; ?></b>
-						</div>
-					</td>
-				</tr>
-				<tr bgcolor="#FFFFFF">
 					<td width="200" bgcolor="#999999"><div class="isi_tabel"><strong>Nama Lengkap</strong></div></td>
 					<td>
 						<div class="isi_tabel">

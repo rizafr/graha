@@ -118,10 +118,10 @@ $(document).ready(function()
 
 
 <?php
-	$nama_perusahaan = "
-	<div class='logo-bg'>
-		PT. Pembangunan Jaya Ancol Tbk
-	</div>" ;
+	$nama_perusahaan = '
+	<div class="logo-bg">
+		E- Marketing | <img src="'.base_url().'files/images/favicon.ico"> PT. Pembangunan Jaya Ancol Tbk
+	</div>' ;
 if($this->access_lib->_if("adm"))
 {
 ?>

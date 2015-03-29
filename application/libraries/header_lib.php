@@ -11,7 +11,7 @@ class Header_lib{
 		<head>
 		<noscript><meta http-equiv="refresh" content="0;url='.base_url().'denied/noscript"></noscript>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<title>PT. Pembangunan Jaya Ancol</title>
+		<title>E-Marketing | PT. Pembangunan Jaya Ancol Tbk</title>
 		<link rel="shortcut icon" type="image/x-icon" href="'.base_url().'files/images/favicon.ico" />
 		<script type="text/javascript" src="'.base_url().'files/js/jquery.js"></script>
 		<link rel="stylesheet" type="text/css" href="'.base_url().'files/css/main.css" />
@@ -32,7 +32,7 @@ class Header_lib{
 		<head>
 		<noscript><meta http-equiv="refresh" content="0;url='.base_url().'denied/noscript"></noscript>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>PT. Pembangunan Jaya Ancol</title>
+		<title>E-Marketing | PT. Pembangunan Jaya Ancol Tbk</title>
 		<link rel="shortcut icon" type="image/x-icon" href="'.base_url().'files/images/favicon.ico" />
 		<script type="text/javascript" src="'.base_url().'files/js/jquery.js"></script>
 		<script type="text/javascript" src="'.base_url().'files/js/jquery.ui.core.js"></script>

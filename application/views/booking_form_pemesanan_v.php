@@ -546,16 +546,6 @@ $this->load->view('menu_v');
 			</table>
 			<table width="500px" cellspacing="1px" cellpadding="2px" bgcolor="#CCCCCC" style="float:left">
 				<tr bgcolor="#FFFFFF">
-					<td width="200" bgcolor="#999999"><div class="isi_tabel"><strong>NUP<span class="required_star">*</span></strong></div></td>
-					<td>
-						<div class="isi_tabel">
-							<input type="text" name="nup" id="nup" size="40" value="<?php echo $data_unit->kode_unit; ?>-<?php echo $data_nup; ?>">
-							<input type="hidden" name="no_antrian" id="no_antrian" size="40" value="<?php echo $data_nup; ?>">
-						</div>
-					</td>
-				</tr>
-				
-				<tr bgcolor="#FFFFFF">
 					<td width="200" bgcolor="#999999"><div class="isi_tabel"><strong>Nama Lengkap<span class="required_star">*</span></strong></div></td>
 					<td>
 						<div class="isi_tabel">
