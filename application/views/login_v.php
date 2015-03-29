@@ -4,7 +4,7 @@
 		
 		<div id="login">
 		
-			<h1>Silakan Login</h1>	
+			 <h1>Silakan Login</h1>
 				<?php
 					if($this->session->flashdata('error') != "")
 					{
